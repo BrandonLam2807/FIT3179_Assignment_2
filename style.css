@@ -1,47 +1,49 @@
-label{
+body {
   font-family: Arial, Helvetica, sans-serif;
-}
-body *{
-  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 20px;
+background-color: #ffffff;
 }
 
-h1 {
-  font-weight: 900;
+header {
+  background-color: #ffffff;
+  padding: 15px;
   text-align: center;
 }
 
-h2 {
-  text-align: center;
+section {
+  width: 90%; /* Adjust width as needed */
+  max-width: 1200px; /* Prevents it from being too wide on larger screens */
+  margin: 20px auto; /* Centers the section itself */
+  border: 3px solid #000000;
+  padding: 15px;
+  text-align: center; /* Centers text inside the section */
+background-color: #ffffff;
 }
 
-body, html{
-    background-color: #708090;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    overflow-x: hidden; /* Disable horizontal scrolling */
-    overflow-y: auto;
-  }
-  
-  #vis1 {
-    width: 100%;
-    max-width: 2000px;
-    margin-bottom: 50px ;
-    display: flex;
-    align-items: left;
-  }
+.section-blue{
+background-color: #d8f2fd;
+}
 
-  #vis2 {
-    width: 100%;
-    max-width: 2000px;
-    margin-bottom: 100px ;
-    display: flex;
-    align-items: right;
-  }
-   
-body h1 {
-    align-items: center;
-  }
+.section-grey{
+background-color: #4783dc;
+}
+
+.visualization {
+  border: 2px solid #333; /* Border color and thickness */
+  border-radius: 8px; /* Optional: rounded corners */
+  padding: 15px; /* Space inside the border */
+  margin: 15px 0; /* Space above and below the visualization */
+  background-color: #f9f9f9; /* Optional: background color for contrast */
+}
+
+h1, h2 {
+  color: #000000;
+margin: 0px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: small;
+}
