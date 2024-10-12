@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {
-      "url": "https://raw.githubusercontent.com/BrandonLam2807/FIT3179_Assignment_2/refs/heads/main/australianaturaldisaster.csv"
+      "url": "https://raw.githubusercontent.com/BrandonLam2807/FIT3179_Assignment_2/refs/heads/main/linechart_aus_data.csv"
     },
     "vconcat": [
       {
@@ -13,7 +13,7 @@
             "field": "startDate",
             "type": "temporal",
             "scale": {"domain": {"param": "brush"}},
-            "axis": {"title": "Start Date", "tickCount": 10}
+            "axis": {"title": "Date", "tickCount": 10}
           },
           "y": {"field": "Insured Cost", "type": "quantitative", "axis": {"title": "Insured Cost"}}
         }
@@ -26,7 +26,7 @@
           {"name": "brush", "select": {"type": "interval", "encodings": ["x"]}}
         ],
         "encoding": {
-          "x": {"field": "startDate", "type": "temporal", "axis": {"tickCount": 10}},
+          "x": {"field": "startDate", "type": "temporal", "axis": {"tickCount": 10}, "title": "Date"},
           "y": {
             "field": "Insured Cost",
             "type": "quantitative",

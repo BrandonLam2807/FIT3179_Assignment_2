@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 500,
-    "height": 500,
+    "width": 350,
+    "height": 350,
     "title": "Total number of people that were Alive Vs Not Alive",
     "description": "A simple donut chart with embedded data.",
     "data": {

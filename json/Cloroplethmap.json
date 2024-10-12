@@ -1,8 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 630,
+    "width": 650,
     "height": 430,
-    "title": "Australia Natural Disasters",
+    "title": "Australia Map",
     "projection": {
       "type": "mercator",
       "scale": 700,
@@ -15,8 +15,8 @@
         "bind": {
           "input": "range",
           "min": 500,
-          "max": 8000,
-          "step": 50,
+          "max": 1000000,
+          "step": 100,
           "name": "Zoom Level: "
         }
       },
@@ -32,7 +32,7 @@
             [153.0251, -27.4698],
             [115.8605, -31.9505],
             [138.6007, -34.9285],
-            [-12.4634,130.8456],
+            [132.8506,-14.4594],
             [-42.8821,147.3272],
             [-35.2809,149.1300]
           ],

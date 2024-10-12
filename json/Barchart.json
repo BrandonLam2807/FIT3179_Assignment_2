@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 545,
-    "height": 500,
+    "width": 395,
+    "height": 350,
     "title": "Number of death cases caused by different Disasters across states of Australia",
     "data": {
       "url": "https://raw.githubusercontent.com/BrandonLam2807/FIT3179_Assignment_2/refs/heads/main/australianaturaldisaster.csv"
@@ -48,9 +48,9 @@
       
       "color": {"field": "title", "type": "nominal", "legend": null},
       "tooltip": [
-        {"field": "title", "type": "nominal", "title": "Disaster Type:"},
-        {"field": "region", "type": "nominal", "title": "States of Australia:"},
-        {"field": "Deaths", "type": "quantitative", "title": "Deaths:"}
+        {"field": "title", "type": "nominal", "title": "Disaster Type"},
+        {"field": "region", "type": "nominal", "title": "States of Australia"},
+        {"field": "Deaths", "type": "quantitative", "title": "Deaths"}
       ]
     }
   }
