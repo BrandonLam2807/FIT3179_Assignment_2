@@ -1,0 +1,70 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/BrandonLam2807/FIT3179_Assignment_2/refs/heads/main/bushfire_data_june_2019_to_june_2020.csv"
+    },
+    "vconcat": [
+      {
+        "width": 800,
+        "height": 400,
+        "mark": "area",
+        "encoding": {
+          "x": {
+            "field": "Month",
+            "type": "temporal",
+            "title": "Month"
+          },
+          "y": {
+            "aggregate": "sum",
+            "field": "Area_Affected_Hectares",
+            "type": "quantitative",
+            "title": "Total Area Affected (Hectares)"
+          },
+          "color": {
+            "field": "State",
+            "type": "nominal",
+            "title": "State"
+          },
+          "tooltip": [
+            {"field": "Month", "type": "temporal"},
+            {"field": "State", "type": "nominal"},
+            {"field": "Area_Affected_Hectares", "aggregate": "sum", "type": "quantitative", "title": "Area(Hectares):"}
+          ]
+        },
+        "transform": [
+          {"filter": {"selection": "brush"}}
+        ],
+        "title": "Total Area Affected by Bushfires in Australian States (June 2019 - June 2020)"
+      },
+      {
+        "width": 800,
+        "height": 100,
+        "mark": "area",
+        "selection": {
+          "brush": {
+            "type": "interval",
+            "encodings": ["x"]
+          }
+        },
+        "encoding": {
+          "x": {
+            "field": "Month",
+            "type": "temporal",
+            "title": "Month"
+          },
+          "y": {
+            "aggregate": "sum",
+            "field": "Area_Affected_Hectares",
+            "type": "quantitative",
+            "title": ""
+          },
+          "color": {
+            "field": "State",
+            "type": "nominal",
+            "legend": null
+          }
+        }
+      }
+    ]
+  }
+  

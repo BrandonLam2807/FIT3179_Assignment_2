@@ -12,74 +12,120 @@
 
 </head>
 
+<div class="title-banner-section">
+    <h1>Australia Natural Disasters</h1>
+</div>
+
 <body>
 
     <main>
-        <section class="section-grey">
-            <h1>Australia Natural Disasters</h1>
+        <section class="section-reddish">
             <!-- Container for the cyclone map visualization -->
-            <section class="section-blue">
+            <section class="section-red">
                 <h2>Natural Disaster across the map of Australia</h2>
                 <div class="visualization">
                     <div id="natural_dis_map"></div>
                 </div>
-                <p>This map shows how different natural disasters affect Australia.
-                    Along the northern coast, cyclones and floods are common,
-                    while in the south and east, bushfires are more frequent.
-                    The larger the circle, the more people were affected by the disaster.
 
-                    In the southeast, where most people live, many types of disasters overlap,
-                    making this area especially vulnerable. The map highlights how various regions of Australia face
-                    different threats,
-                    showing the need for communities to be prepared for these recurring challenges.</p>
-
-                <!-- Container for the line chart visualization -->
-            </section>
-
-            <section class="section-blue">
-                <h2>title</h2>
-                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
-                    <!-- Description on the left -->
-                    <div style="flex: 1; text-align: left; padding-left: 20px;">
-                        <p>Description of line chart and stacked bar chart goes here.</p> 
+                <!-- New Storytelling Textboxes Below the Choropleth Map -->
+                <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+                    <div style="flex: 1; padding-right: 20px;">
+                        <h3>Overview of the map</h3>
+                        <p>This map shows the different types of natural disasters that affect Australia. Each dot represents a disaster, with the color indicating the type, such as bushfires, floods, or cyclones. The size of the dots shows how many people were impacted, with larger dots meaning more people were affected.</p>
                     </div>
-                    <div style="flex: 1; text-align: left; padding-left: 20px;">  
-                        <p>Description of line chart and stacked bar chart goes here.</p>
+                    <div style="flex: 1; padding-left: 20px;">
+                        <h3>Disaster Patterns Across Australia</h3>
+                        <p>The southeast of Australia, where cities like Sydney and Melbourne are located, shows many overlapping disasters, making it a high-risk area. In the northern regions, cyclones and floods are more common, reflecting the tropical climate. This map highlights the need for specific disaster response plans tailored to each region’s unique risks.</p>
                     </div>
-                    <!-- Visualizations stacked vertically on the right -->
-                    <div style="flex: 1;">
-                        <div class="visualization">
-                            <div id="pie_chart"></div>
-                        </div>
-                        <div class="visualization">
-                            <div id="bar_chart"></div>
-                        </div>
-                    </div>
-                    
                 </div>
-            
-              </section>
-              
+            </section>
+                <!-- Container for the line chart and stacked bar chart visualization -->
+                <section class="section-red">
+                    <h2>Human Impact and Fatalities from Disaster Across Australia</h2>
+                    <div class="chart-container">
+                        
+                        <!-- Left side: Stacked storytelling textboxes -->
+                        <div class="storytelling-container">
+                            <!-- Storytelling textbox for pie chart -->
+                            <div class="storytelling-box-2">
+                                <h3>How Disasters Affect People?</h3>
+                                <p>The pie chart shows how disasters have affected people in different ways. The largest group is those who were evacuated, meaning most people had to leave their homes but weren’t hurt. However, a smaller portion represents those who lost their lives or were injured, showing the serious impact of these events.</p>
+                            </div>
+    
+                            <!-- Storytelling textbox for bar chart -->
+                            <div class="storytelling-box-2">
+                                <h3>Deaths from Different Types of Disasters</h3>
+                                <p>The bar chart highlights deaths from different types of disasters in Victoria. Transport-related disasters caused the most deaths, followed by shipwrecks and other categories like urban fires and bushfires. This shows that transport accidents are a major concern in disaster situations.</p>
+                            </div>
+                        </div>
+    
+                        <!-- Right side: Visualizations stacked vertically -->
+                        <div class="visualizations-container">
+                            <!-- Pie chart visualization -->
+                            <div class="visualization">
+                                <div id="pie_chart"></div>
+                            </div>
+                            <!-- Bar chart visualization -->
+                            <div class="visualization">
+                                <div id="bar_chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-            <section class="section-blue">
-                <h2>Insured Cost after Disaster Event</h2>
+
+            <section class="section-red">
+                <h2>Insured Cost after each Disaster Events</h2>
                 <div style="display: flex; justify-content: space-between; align-items: center;">
                     <div class="visualization" style="flex: 1;">
                         <div id="line_chart"></div>
                     </div>
-                    <div style="flex: 1; text-align: right; padding-right: 20px;">
-                        <p>Description of Insured Cost goes here.</p>
+                    <div style="flex: 1; padding-left: 20px;">
+                        <div style="padding-bottom: 20px;">
+                            <h3>Impact</h3>
+                            <p>The chart shows how the cost of disasters in Australia has increased over time, from 1975 to 2020. The spikes represent major events like bushfires, floods, and cyclones, which caused the most damage. Over the years, these events have become more expensive, reflecting both more frequent disasters and the higher value of damaged property.</p>
+                        </div>
+                        <div style="padding-bottom: 20px;"></div>
+                            <p>In fact, Bushfires and floods, in particular, have led to the largest insured costs, especially in recent years. This shows the growing financial impact of disasters, highlighting the need for better disaster preparation and protection.</p>
+                        </div>
                     </div>
-                </div>
             </section>
 
-            <section class="section-blue">
+            <section class="section-red">
                 <h2>Trends in Bushfire Impact Across Australian States</h2>
                 <div class="visualization">
                     <div id="area_chart"></div>
                 </div>
-                <p>Description of area and analysis of people status.</p>
+                <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+                    <div style="flex: 1; padding-right: 20px;">
+                        <h3>Story Title 1</h3>
+                        <p>This is the first storytelling text box. You can use this section to describe specific
+                            insights
+                            drawn from the map above, for instance, how cyclone impacts are concentrated in the north
+                            or how the bushfire-prone areas are particularly dangerous during hot seasons.</p>
+                    </div>
+                    <div style="flex: 1; padding-left: 20px;">
+                        <h3>Story Title 2</h3>
+                        <p>This is the second storytelling text box. You might want to emphasize other aspects, such as
+                            the social or economic effects of disasters, or mention the response strategies communities
+                            have adopted to mitigate the impacts shown in the map.</p>
+                    </div>
+                </div>
             </section>
+
+            <section class="section-red">
+                <div id="metadata">
+                    <p>Author: Brandon Lam</p>
+                    <p>Data sources: </p>
+                    <ul>
+                        <li><a href="https://data.gov.au/dataset/ds-dga-26e2ebff-6cd5-4631-9653-18b56526e354/details"
+                                target="_blank">Disaster Events - Category Impact and Location</a></li>
+                        <li><a href="https://www.disasterassist.gov.au/find-a-disaster/australian-disasters"
+                                target="_blank">Australian Disasters - each event across different states</a></li>
+                    </ul>
+                </div>
+            </section>
+
 
         </section>
         <script type="text/javascript">

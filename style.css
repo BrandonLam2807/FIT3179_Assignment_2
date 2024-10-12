@@ -1,19 +1,32 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 20px;
-background-color: #ffffff;
+  background-image: url('road.jpeg');
 }
 
-header {
-  background-color: #ffffff;
-  padding: 15px;
+.title-banner-section {
+  position: relative;
+  width: 100%; /* Use viewport width for full width */
+  background-image: url('fire.jpeg'); /* Set your background image */
+  background-size: cover; /* Make sure the image covers the section */
+  background-position: center; /* Center the image */
+  height: 300px; /* Adjust height to your preference */
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; /* White text color */
   text-align: center;
+  margin: 0; /* Remove any margin around the section */
+  padding: 0; /* Remove padding */
+  overflow: hidden; /* Prevents scrolling or overflow issues */
 }
+
 
 p {
   text-align: justify;
 }
+
+
 
 section {
   width: 90%; /* Adjust width as needed */
@@ -22,15 +35,45 @@ section {
   border: 3px solid #000000;
   padding: 15px;
   text-align: center; /* Centers text inside the section */
-background-color: #ffffff;
+  background-color: #ffffff;
+}
+#metadata p {
+  text-align: center;
 }
 
-.section-blue{
-background-color: #d8f2fd;
+#metadata {
+  text-align: center;
+  margin: 0 auto; /* Centers the div if it has a specific width */
+  padding: 10px; /* Optional: Adds some space around the content */
 }
 
-.section-grey{
-background-color: #7997aa;
+#metadata ul {
+  list-style: none; /* Removes bullets */
+  padding: 0;
+  margin: 0 auto; /* Centers the ul */
+  display: inline-block; /* Centers the ul's content */
+}
+
+#metadata ul li {
+  margin-bottom: 5px; /* Optional: Adds space between list items */
+}
+
+#metadata a {
+  text-decoration: none; /* Removes underline */
+  color: blue; /* Sets the link color */
+}
+
+#metadata a:hover {
+  text-decoration: underline; /* Adds underline on hover */
+}
+
+
+.section-red {
+  background-color: #fd8038;
+}
+
+.section-reddish {
+  background-color: #d6c0b7;
 }
 
 .visualization {
@@ -41,10 +84,27 @@ background-color: #7997aa;
   background-color: #f9f9f9; /* Optional: background color for contrast */
 }
 
-h1, h2 {
+h1 {
+  color: #ffffff;
+  font-size: 4em;
+  margin: 0px;
+  text-align: center;
+}
+
+h2 {
   color: #000000;
-margin: 0px;
-text-align: center;
+  font-size: 30px;
+  margin: 0px;
+  text-align: center;
+}
+
+h3 {
+  color: #000000;
+  margin: 0px;
+  font-size: 22px;
+  font-weight: bold;
+  text-shadow: #000000;
+  text-align: center;
 }
 
 footer {
@@ -52,3 +112,51 @@ footer {
   margin-top: 20px;
   font-size: small;
 }
+
+.title-banner-section {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.section-reddish {
+  padding: 20px;
+}
+
+.section-red {
+  margin-bottom: 40px;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.storytelling-container {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.storytelling-box-2 {
+  padding-bottom: 20px;
+}
+
+.storytelling-box h3 {
+  margin: 0;
+}
+
+.visualizations-container {
+  flex: 1;
+}
+
+.visualization {
+  margin-top: 20px;
+}
+
+.storytelling-box-2 {
+  padding-top: 80px;
+  margin-top: 80px;
+  padding-bottom: 100px; /* existing padding */
+  margin-bottom: 100px; /* add margin to create space */
+}
+
