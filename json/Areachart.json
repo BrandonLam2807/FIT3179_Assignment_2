@@ -3,6 +3,7 @@
     "data": {
       "url": "https://raw.githubusercontent.com/BrandonLam2807/FIT3179_Assignment_2/refs/heads/main/bushfire_data_june_2019_to_june_2020.csv"
     },
+    "background": "#d6dbdf",
     "vconcat": [
       {
         "width": 800,

@@ -13,14 +13,48 @@
       ]
     },
     "background": "#d6dbdf",
-    "mark": {"type": "arc", "innerRadius": 30},
-    "encoding": {
-      "theta": {"field": "count", "type": "quantitative"},
-      "color": {"field": "Status", "type": "nominal"},
-      "tooltip": [
-            {"field": "Status", "type": "nominal", "title": "Status:"},
-            {"field": "count", "type": "quantitative", "title": "Number of people:"}
+    "layer": [
+      {
+        "mark": {"type": "arc", "innerRadius": 80}, 
+        "encoding": {
+          "theta": {"field": "count", "type": "quantitative"},
+          "color": {
+            "field": "Status", 
+            "type": "nominal",
+            "legend": {"title": "Status"}
+          },
+          "tooltip": [
+            {"field": "Status", "type": "nominal", "title": "Status"},
+            {"field": "count", "type": "quantitative", "title": "Number of people"}
           ]
-    }
+        }
+      },
+      {
+        "mark": {
+          "type": "text", 
+          "radiusOffset": -30, 
+          "fontSize": 12,
+          "align": "center",
+          "baseline": "middle"
+        },
+        "encoding": {
+          "theta": {"field": "count", "type": "quantitative"},
+          "radius": {"value": 85}, 
+          "color": {"value": "black"}, 
+          "text": {"field": "count", "type": "quantitative"}
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "fontSize": 14,
+          "fontWeight": "bold",
+          "dy": 200,  
+          "color": "#000000"  
+        },
+        "encoding": {
+          "text": {"value": "Evacuated has the most total number: 134,314"}
+        }
+      }
+    ]
   }
-  
